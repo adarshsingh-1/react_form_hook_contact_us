@@ -13,7 +13,7 @@ function App() {
     setSubmitMessage(null);
 
     try {
-      // Send a POST request to our backend's /api/contact endpoint
+      // Send a POST request to our backend's /api/contact endpoin t
       const response = await axios.post('https://contact-us-backend-jw6.onrender.com/api/contact', data);
 
       setSubmitMessage({ type: 'success', text: 'Thank you! Your message has been sent.' });
