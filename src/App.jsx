@@ -14,8 +14,8 @@ function App() {
 
     try {
       // Send a POST request to our backend's /api/contact endpoint
-      const response = await axios.post('http://localhost:3000/api/contact', data);
-      
+      const response = await axios.post('https://contact-us-backend-jjw6.onrender.com', data);
+
       setSubmitMessage({ type: 'success', text: 'Thank you! Your message has been sent.' });
       reset(); // Clear the form fields
     } catch (error) {
